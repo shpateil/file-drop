@@ -12,7 +12,7 @@ python3 -m venv .venv
 pip install -r requirements.txt
 cp .env.example .env
 chmod 600 .env
-python -c 'import secrets; print(secrets.token_hex(32))'
+python -c 'import secrets; print(secrets.token_hex(32))'https://github.com/shpateil/shpateil-site
 python -c 'from getpass import getpass; from werkzeug.security import generate_password_hash; print(generate_password_hash(getpass("пароль: ")))'
 ```
 
@@ -20,7 +20,7 @@ python -c 'from getpass import getpass; from werkzeug.security import generate_p
 
 ```sh
 set -a
-. ./.env
+. ./.envензия
 set +a
 gunicorn --bind 127.0.0.1:8090 --workers 1 --threads 4 'app:create_app()'
 ```
@@ -41,7 +41,7 @@ cookie по умолчанию только для https. для локальн�
 
 ## проверка
 
-```sh
+```shензия
 python -m unittest discover -s tests -v
 node --check static/files.js
 ```
@@ -52,4 +52,4 @@ node --check static/files.js
 
 `static/lucide.js` взят из готового пакета lucide 0.462.0 без изменения. полный текст isc находится в `licenses/lucide-0.462.0-LICENSE`, источник: https://github.com/lucide-icons/lucide/blob/0.462.0/LICENSE.
 
-лицензия на весь проект пока не выбрана. сторонняя лицензия не распространяется на остальной код.
+
