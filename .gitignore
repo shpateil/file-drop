@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+data/
+instance/
+*.log
+*.bak
+*.tmp
+tmp*/
