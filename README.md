@@ -46,7 +46,7 @@ python -m unittest discover -s tests -v
 node --check static/files.js
 ```
 
-тесты используют flask test_client и временные каталоги, реальные данные не нужны.
+тесты используют flask test_client и временные каталоги, реальные данные не нужныы.
 
 ## сторонние компоненты
 
